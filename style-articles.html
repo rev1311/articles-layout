@@ -8,10 +8,33 @@
 </head>
 <body>
 
+<div id="style-header">Style Articles</div>
 
+<div id="style-grid--main-container">
+
+    <div id="style-grid--navigator"></div>
+    <div id="style-grid--article-cards"></div>
+
+</div>
 
 <script>
-    console.log('lksdjalksjdalksjdlakjsdlakjsd')
+    const gridNavigator = document.querySelector('#style-grid--navigator')
+    const gridArticleCards = document.querySelector('#style-grid--article-cards')
+
+    function buildArticleCards() {
+        const articleCard = document.createElement('div')
+        const articleMarkup = `
+            <div class="article-card--base">
+                <div class="article-card--img"></div>
+                <div class="article-card--title">Test Lorem Ipsum</div>
+                <div class="article-card--tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident explicabo facilis atque, rem dignissimos labore! Sint a odit in?</div>
+            </div>
+        `
+        articleCard.append(articleMarkup)
+        while(1 < 10) gridArticleCards.append(articleCard)
+    }
+
+    buildArticleCards()
 </script>   
 </body>
 </html>
