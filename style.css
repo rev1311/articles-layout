@@ -23,7 +23,7 @@ body {
 #style-grid--main-container {
     display: grid;
     grid-auto-flow: row;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr 80% 1fr;
     grid-template-rows: auto;
 
     width: 100%;
@@ -39,7 +39,7 @@ body {
 #style-grid--article-cards {
     display: flex;
     flex-wrap: wrap;
-    background-color: blue;
+    background-color: #fff;
     grid-column: 2;
     grid-row: 2 / auto;
     align-items: center;
@@ -54,6 +54,14 @@ body {
     border-radius: 0.5em;
     width: 400px;
     padding: 20px;
+    margin: 5px;
+}
+.article-card--base:active,
+.article-card--base:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease-in;
 }
 .article-card--img {
     background-color: #aaa;
