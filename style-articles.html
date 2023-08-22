@@ -30,8 +30,11 @@
                 <div class="article-card--tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident explicabo facilis atque, rem dignissimos labore! Sint a odit in?</div>
             </div>
         `
-        articleCard.append(articleMarkup)
-        while(1 < 10) gridArticleCards.append(articleCard)
+        // while(1 < 10) {
+        articleCard.innerHTML = articleMarkup
+            gridArticleCards.append(articleCard)
+            console.log("cardcardcard")
+        // }
     }
 
     buildArticleCards()
