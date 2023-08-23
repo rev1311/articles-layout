@@ -18,28 +18,28 @@
 </div>
 
 <script>
-    const gridNavigator = document.querySelector('#style-grid--navigator')
-    const gridArticleCards = document.querySelector('#style-grid--article-cards')
+const gridNavigator = document.querySelector('#style-grid--navigator')
+const gridArticleCards = document.querySelector('#style-grid--article-cards')
 
-    function buildArticleCards() {
-        const articleCard = document.createElement('div')
-        const articleMarkup = `
-            <div class="article-card--base">
-                <div class="article-card--img"></div>
-                <div class="article-card--title">Test Lorem Ipsum</div>
-                <div class="article-card--tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident explicabo facilis atque, rem dignissimos labore! Sint a odit in?</div>
-            </div>
-        `
-        articleCard.innerHTML = articleMarkup
-        gridArticleCards.append(articleCard)
-    }
+function buildArticleCards() {
+    const articleCard = document.createElement('div')
+    const articleMarkup = `
+        <div class="article-card--base">
+            <div class="article-card--img"></div>
+            <div class="article-card--title">Test Lorem Ipsum</div>
+            <div class="article-card--tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident explicabo facilis atque, rem dignissimos labore! Sint a odit in?</div>
+        </div>
+    `
+    articleCard.innerHTML = articleMarkup
+    gridArticleCards.append(articleCard)
+}
 
 
-    let i = 0
-    while( i < 10 ) {
-        buildArticleCards()
-        i++
-    }
+let i = 0
+while( i < 10 ) {
+    buildArticleCards()
+    i++
+}
 </script>   
 </body>
 </html>
